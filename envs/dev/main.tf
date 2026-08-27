@@ -1,3 +1,6 @@
+
+### Additional resources for the dev environment
+
 locals {
   project = "pharma"
   env     = "dev"
