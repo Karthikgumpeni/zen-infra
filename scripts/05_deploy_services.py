@@ -139,7 +139,7 @@ ENV            = prompt_choice("ENV", "Target environment", ["dev", "qa", "prod"
 GITHUB_USERNAME = prompt("GITHUB_USERNAME", "GitHub username (owner of zen-gitops repo)",
                          "ravdy")
 
-APPS_DIR = os.path.join(PROJECT_ROOT, "zen-gitops/argocd/apps", ENV)
+APPS_DIR = os.path.join(PROJECT_ROOT, "gitops/argocd/apps", ENV)
 if not os.path.isdir(APPS_DIR):
     die(f"Apps directory not found: {APPS_DIR}")
 
